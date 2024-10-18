@@ -1,0 +1,65 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e0f7fa; /* Light teal background */
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+}
+
+.counter__title {
+  font-size: 3rem;
+  color: #2c3e50; /* Darker color for contrast */
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.counter__title:hover {
+  color: #2980b9; /* Brighter color on hover */
+}
+
+.counter__btn {
+  display: flex;
+  gap: 15px;
+}
+
+.counter__btn .MuiButton {
+  padding: 12px 25px; /* Slightly larger padding */
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #3498db; /* Primary button color */
+  color: #fff; /* White text for better contrast */
+  border: none; /* Remove border */
+}
+
+.counter__btn .MuiButton:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+  transform: translateY(-2px);
+}
+
+.counter__btn .MuiButton:active {
+  transform: translateY(0);
+}
+
+.counter__input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.counter__input-value {
+  margin-bottom: 10px;
+}
+
+.counter__input-click .MuiButton {
+  background-color: #27ae60; /* Different color for set value button */
+}
+
+.counter__input-click .MuiButton:hover {
+  background-color: #219653; /* Darker shade on hover */
+}
